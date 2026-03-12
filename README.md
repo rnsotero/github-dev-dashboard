@@ -55,7 +55,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 1. Clone o repositório
 
 ```
-git clone https://github.com/seu-usuario/github-dev-dashboard.git
+git clone https://github.com/rnsotero/github-dev-dashboard.git
 ```
 
 2. Acesse a pasta do projeto
