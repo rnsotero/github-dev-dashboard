@@ -36,7 +36,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ## 📷 Preview
 
-![Preview](https://raw.githubusercontent.com/rnsotero/github-dev-dashboard/main/images/preview.png)
+![Preview](https://raw.githubusercontent.com/rnsotero/github-dev-dashboard/main/images/preview.gif)
 
 ---
 
