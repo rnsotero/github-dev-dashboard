@@ -36,16 +36,16 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ## 📷 Preview
 
-![Preview](images/preview.png)
+![Preview](images/preview.gif)
 ---
 
 ### 📊 Dashboard
 
-![Dashboard](Images/dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ### 📈 Gráfico de Linguagens
 
-![Grafico](Images/chart.png)
+![Grafico](images/chart.png)
 
 ---
 
