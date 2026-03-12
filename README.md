@@ -1,5 +1,7 @@
 # 📊 GitHub Dev Dashboard
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://rnsotero.github.io/github-dev-dashboard)
+
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow)
 ![HTML](https://img.shields.io/badge/HTML-orange)
 ![CSS](https://img.shields.io/badge/CSS-blue)
@@ -35,7 +37,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 ## 📷 Preview
 
 <p align="center">
-  <img src="images/preview.png" width="800">
+  <img src="images/preview.gif" width="800">
 </p>
 
 ---
