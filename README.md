@@ -36,10 +36,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ## 📷 Preview
 
-<p align="center">
-  <img src="images/preview.gif" width="800">
-</p>
-
+![Preview](images/preview.png)
 ---
 
 ### 📊 Dashboard
