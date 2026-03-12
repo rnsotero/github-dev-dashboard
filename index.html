@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>GitHub Dev Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- biblioteca de animação -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- biblioteca de gráfico -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<h1>GitHub Dev Dashboard</h1>
+
+<div class="search-container">
+
+<input
+type="text"
+id="username"
+placeholder="Digite um usuário do GitHub"
+>
+
+<button id="searchBtn">Buscar</button>
+
+</div>
+
+<div id="loading"></div>
+
+<div id="profileCard"></div>
+
+<div class="dashboard">
+
+<div class="card" data-aos="fade-up">
+
+<h2>Linguagens</h2>
+
+<canvas id="languageChart"></canvas>
+
+</div>
+
+<div class="card" data-aos="fade-up">
+
+<h2>Top Repositórios</h2>
+
+<div id="repos"></div>
+
+</div>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
