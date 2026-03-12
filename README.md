@@ -42,11 +42,11 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ### 📊 Dashboard
 
-![Dashboard](images/dashboard.png)
+![Dashboard](Images/dashboard.png)
 
 ### 📈 Gráfico de Linguagens
 
-![Grafico](images/chart.png)
+![Grafico](Images/chart.png)
 
 ---
 
