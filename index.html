@@ -3,21 +3,23 @@
 
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>GitHub Dev Dashboard</title>
 
 <link rel="stylesheet" href="style.css">
 
-<!-- biblioteca de animação -->
+<!-- AOS (animações) -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<!-- biblioteca de gráfico -->
+<!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
 
-<h1>GitHub Dev Dashboard</h1>
+<h1>📊 GitHub Dev Dashboard</h1>
 
 <div class="search-container">
 
@@ -25,29 +27,34 @@
 type="text"
 id="username"
 placeholder="Digite um usuário do GitHub"
->
+autocomplete="off"
+/>
 
 <button id="searchBtn">Buscar</button>
 
 </div>
 
+<!-- Loading -->
 <div id="loading"></div>
 
-<div id="profileCard"></div>
+<!-- Perfil -->
+<div id="profileCard" data-aos="fade-up"></div>
 
 <div class="dashboard">
 
+<!-- Gráfico -->
 <div class="card" data-aos="fade-up">
 
-<h2>Linguagens</h2>
+<h2>📊 Linguagens</h2>
 
 <canvas id="languageChart"></canvas>
 
 </div>
 
+<!-- Repositórios -->
 <div class="card" data-aos="fade-up">
 
-<h2>Top Repositórios</h2>
+<h2>📁 Top Repositórios</h2>
 
 <div id="repos"></div>
 
@@ -55,12 +62,17 @@ placeholder="Digite um usuário do GitHub"
 
 </div>
 
+<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
-AOS.init();
+AOS.init({
+  duration: 800,
+  once: true
+});
 </script>
 
+<!-- JS principal -->
 <script src="script.js"></script>
 
 </body>
