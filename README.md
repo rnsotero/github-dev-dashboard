@@ -44,7 +44,7 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ![Dashboard](images/dashboard.png)
 
-### 📈 Gráfico de Linguagens
+### 📈 Gráfico de Linguagens e Repositórios
 
 ![Grafico](images/chart.png)
 
