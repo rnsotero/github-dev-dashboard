@@ -21,13 +21,21 @@ async function buscarPerfil() {
   const profileCard = document.getElementById("profileCard");
   const reposContainer = document.getElementById("repos");
 
-  // 🔄 Loading moderno
-  loading.innerHTML = `<p class="loading">🔄 Carregando dados...</p>`;
-  profileCard.innerHTML = "";
+  // 🔒 Reset
+  profileCard.style.display = "none";
   reposContainer.innerHTML = "";
 
+  // 🔄 Skeleton UI
+  loading.innerHTML = `
+    <div class="card">
+      <div class="skeleton skeleton-avatar"></div>
+      <div class="skeleton skeleton-text"></div>
+      <div class="skeleton skeleton-text"></div>
+      <div class="skeleton skeleton-text"></div>
+    </div>
+  `;
+
   try {
-    // 🔎 Buscar usuário
     const userResponse = await fetch(`https://api.github.com/users/${username}`);
 
     if (!userResponse.ok) {
@@ -36,35 +44,47 @@ async function buscarPerfil() {
 
     const userData = await userResponse.json();
 
-    // 📁 Buscar repositórios
     const reposResponse = await fetch(`https://api.github.com/users/${username}/repos`);
     const reposData = await reposResponse.json();
 
     loading.innerHTML = "";
 
-    // 💾 Salvar última busca
     localStorage.setItem("lastUser", username);
 
     mostrarPerfil(userData);
+    profileCard.style.display = "block";
+
     mostrarRepos(reposData);
     mostrarGrafico(reposData);
 
   } catch (error) {
-    loading.innerHTML = `<p style="color:red;">❌ ${error.message}</p>`;
+    loading.innerHTML = `
+      <div class="error">
+        ❌ ${error.message}
+      </div>
+    `;
+    profileCard.style.display = "none";
   }
 }
 
 // 👤 Perfil
 function mostrarPerfil(data) {
   document.getElementById("profileCard").innerHTML = `
-    <div class="profile card">
+    <div class="profile">
       <img src="${data.avatar_url}" class="avatar">
       <h2>${data.name || data.login}</h2>
       <p>${data.bio || "Sem bio disponível"}</p>
-      <p>👥 Seguidores: ${data.followers}</p>
-      <p>📦 Repositórios: ${data.public_repos}</p>
+
+      <div style="margin: 10px 0;">
+        <strong>👥 ${data.followers}</strong> seguidores •
+        <strong>📦 ${data.public_repos}</strong> repos
+      </div>
+
       <p>📍 ${data.location || "Não informado"}</p>
-      <a href="${data.html_url}" target="_blank">Ver perfil</a>
+
+      <a href="${data.html_url}" target="_blank">
+        🔗 Ver perfil
+      </a>
     </div>
   `;
 }

@@ -7,7 +7,7 @@
 ![CSS](https://img.shields.io/badge/CSS-blue)
 ![Chart.js](https://img.shields.io/badge/Chart.js-Data%20Visualization-red)
 
-Um **dashboard interativo** que consome a API pública do GitHub para exibir informações de usuários, incluindo perfil, repositórios mais populares e linguagens de programação utilizadas.
+Aplicação web que consome a API do GitHub para visualizar perfis, repositórios e estatísticas de forma interativa e moderna.
 
 Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo de APIs REST e manipulação do DOM**, além de criar uma interface moderna em **Dark Mode**.
 
@@ -15,22 +15,22 @@ Este projeto foi desenvolvido com o objetivo de **praticar JavaScript, consumo d
 
 ## 🚀 Funcionalidades
 
-* 🔎 Buscar usuários do GitHub
-* 👤 Exibir informações do perfil
-* ⭐ Mostrar os repositórios mais populares
-* 📊 Gerar gráfico das linguagens mais utilizadas
-* 🌙 Interface moderna em Dark Mode
-* ⚡ Animações e interações na interface
+- 🔍 Busca de usuários do GitHub
+- 👤 Exibição de perfil (avatar, bio, seguidores, localização)
+- 📁 Top repositórios mais populares
+- 📊 Gráfico de linguagens com Chart.js
+- 💾 Salvamento da última busca (localStorage)
+- ⚡ Skeleton loading (UX moderna)
+- ❌ Tratamento de erros (usuário não encontrado)
 
----
+## 🛠️ Tecnologias utilizadas
 
-## 🛠 Tecnologias Utilizadas
-
-* **JavaScript**
-* **HTML5**
-* **CSS3**
-* **Chart.js**
-* API pública do GitHub
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- Chart.js
+- AOS (animações)
+- GitHub REST API
 
 ---
 
@@ -81,7 +81,7 @@ Este projeto foi criado como parte do meu processo de aprendizado em **desenvolv
 
 ## 📚 Aprendizados
 
-Durante o desenvolvimento deste projeto aprendi a:
+Durante o desenvolvimento, evoluí minhas habilidades em:
 
 * consumir APIs utilizando **Fetch API**
 * manipular dados retornados em **JSON**
@@ -91,12 +91,13 @@ Durante o desenvolvimento deste projeto aprendi a:
 
 ---
 
-## 🌐 Possíveis melhorias futuras
+## 📌 Melhorias futuras
 
-* 🔍 busca automática de usuários
-* 📊 novos tipos de gráficos
-* 📱 melhor responsividade para mobile
-* ⭐ exibição de mais métricas do GitHub
+- Melhorar responsividade (mobile-first)
+- Implementar modo Light/Dark
+- Paginação de repositórios
+- Filtros por linguagem
+- Deploy com CI/CD
 
 ---
 
@@ -110,3 +111,13 @@ Sinta-se à vontade para abrir **issues** ou enviar **pull requests**.
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
+
+
+## 👨‍💻 Autor
+
+Desenvolvido por Renato Sotero
+
+🔗 https://www.linkedin.com/in/renato-sotero-028b9a1b0/
+
+
+💡 Projeto com foco em evolução contínua e boas práticas de front-end.

@@ -9,57 +9,46 @@
 
 <link rel="stylesheet" href="style.css">
 
-<!-- AOS (animações) -->
+<!-- AOS -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-</head>
-
 <body>
 
-<h1>📊 GitHub Dev Dashboard</h1>
+<h1 class="title">📊 GitHub Dev Dashboard</h1>
 
 <div class="search-container">
-
-<input
-type="text"
-id="username"
-placeholder="Digite um usuário do GitHub"
-autocomplete="off"
-/>
-
-<button id="searchBtn">Buscar</button>
-
+  <input
+    type="text"
+    id="username"
+    placeholder="Digite um usuário do GitHub"
+    autocomplete="off"
+  />
+  <button id="searchBtn">Buscar</button>
 </div>
 
-<!-- Loading -->
 <div id="loading"></div>
 
-<!-- Perfil -->
-<div id="profileCard" data-aos="fade-up"></div>
+<!-- 👤 PERFIL (AGORA EM CIMA) -->
+<div class="container">
+  <div class="card profile-card" id="profileCard" data-aos="fade-up"></div>
 
-<div class="dashboard">
+  <!-- 📊 DASHBOARD -->
+  <div class="dashboard">
 
-<!-- Gráfico -->
-<div class="card" data-aos="fade-up">
+    <div class="card" id="grafico-card" data-aos="fade-up">
+      <h2>📊 Linguagens</h2>
+      <canvas id="languageChart"></canvas>
+    </div>
 
-<h2>📊 Linguagens</h2>
+    <div class="card" id="repos-card" data-aos="fade-up">
+      <h2>📁 Top Repositórios</h2>
+      <div id="repos"></div>
+    </div>
 
-<canvas id="languageChart"></canvas>
-
-</div>
-
-<!-- Repositórios -->
-<div class="card" data-aos="fade-up">
-
-<h2>📁 Top Repositórios</h2>
-
-<div id="repos"></div>
-
-</div>
-
+  </div>
 </div>
 
 <!-- AOS -->
@@ -72,7 +61,7 @@ AOS.init({
 });
 </script>
 
-<!-- JS principal -->
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
